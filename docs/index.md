@@ -291,7 +291,7 @@ Now both of these functions will be executed whenever someone clicks the page.
 
 ### Event listener parameter
 
-When we attach callback functions to events these functions are passed as an event argument. The type of event given will change depending on the type input device which triggered it. Since we are listening for a `click` event we will receive a [`MouseEvent`][mouse-event].
+When we attach callback functions with event listeners these functions are passed an event parameter. The type of event given will change depending on the type of input device which triggered it. Since we are listening for a `click` event we will receive a [`MouseEvent`][mouse-event].
 
 ```js
 var logEvent = function(evt) {
@@ -718,7 +718,7 @@ Let's create a small helper function. It creates a DOM node and adds some text t
 var createElementWithTextNode = function (tagName, tagContent) {}
 ```
 
-Right inside of that function declaration we should add a call to `document.createElement`. 
+Right inside of that function declaration we should add a call to `document.createElement`.
 
 ```js
 var createElementWithTextNode = function (tagName, tagContent) {
